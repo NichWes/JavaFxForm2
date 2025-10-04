@@ -59,6 +59,7 @@ public class SupplierController {
 
     @FXML
     public void editSupplier() {
+        
         Supplier selected = tblSupplier.getSelectionModel().getSelectedItem();
         if (selected == null) {
             showAlert("Error", "Pilih supplier dulu!");
