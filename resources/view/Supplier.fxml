@@ -1,0 +1,27 @@
+<AnchorPane xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.gudang.controller.SupplierController"
+            prefWidth="600" prefHeight="400">
+    <children>
+        <Label text="Manajemen Supplier" layoutX="20" layoutY="10" style="-fx-font-size:18;"/>
+        
+        <TextField fx:id="txtKode" layoutX="20" layoutY="50" promptText="Kode"/>
+        <TextField fx:id="txtNama" layoutX="20" layoutY="90" promptText="Nama"/>
+        <TextField fx:id="txtAlamat" layoutX="20" layoutY="130" promptText="Alamat"/>
+        <TextField fx:id="txtTelepon" layoutX="20" layoutY="170" promptText="Telepon"/>
+
+        <Button text="Tambah" layoutX="20" layoutY="210" onAction="#tambahSupplier"/>
+
+        <TableView fx:id="tblSupplier" layoutX="20" layoutY="250" prefWidth="560" prefHeight="120">
+            <columns>
+                <TableColumn fx:id="colKode" text="Kode" prefWidth="120"/>
+                <TableColumn fx:id="colNama" text="Nama" prefWidth="120"/>
+                <TableColumn fx:id="colAlamat" text="Alamat" prefWidth="160"/>
+                <TableColumn fx:id="colTelepon" text="Telepon" prefWidth="140"/>
+            </columns>
+        </TableView>
+
+        <Button text="Edit" layoutX="420" layoutY="210" onAction="#editSupplier"/>
+        <Button text="Hapus" layoutX="480" layoutY="210" onAction="#hapusSupplier"/>
+    </children>
+</AnchorPane>
